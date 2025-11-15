@@ -1,0 +1,42 @@
+<html>
+    <head><title>football</title></head>
+    <body>
+        <p id="para">team</p>
+        <button onclick="document.getElementById('para').innerHTML='stricker'">
+
+            click here for change
+
+        </button>
+        <script>
+            function hi(){
+                alert('clubs')
+                document.getElementById('para').innerHTML='messi is a good player';
+
+            }
+            
+        </script>
+        <button onclick="hi()">
+        click here
+    </button>
+    <select name="colors" id="colors" onchange="clrs()">
+        <option value="blue">blue</option>
+        <option value="yellow">yellow</option>
+        <option value="green">green</option>
+        <option value="red">red</option>
+    </select>
+    <script>
+        function clrs(){
+            colors=document.getElementById('colors').value
+            document.body.style.backgroundColor=colors 
+        }
+    </script>
+    <input type="text" id="data1">
+    <input type="text" id="data2" onkeypress="changedata()">
+    <script>
+        function changedata(){
+        secondbox=document.getElementById('data2').value
+        document.getElementById('data1').value=secondbox
+        }
+    </script>
+    </body>
+</html>
